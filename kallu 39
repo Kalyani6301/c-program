@@ -1,0 +1,22 @@
+/*sum and average of the elements in an array */
+#include <stdio.h>
+#include <malloc.h>
+void main(){
+   int i, n,avg=0, sum = 0;
+   int *ptr;
+   printf("Enter size of array :");
+   scanf("%d", &n);
+   ptr = (int *) malloc(n * sizeof(int));
+   printf("Enter elements in the List");
+   for (i = 0; i < n; i++){
+      scanf("%d", ptr + i);
+   }
+   
+   for (i = 0; i < n; i++){
+      sum = sum + *(ptr + i);
+      avg=sum/n;
+   }
+   printf("Sum of all elements in an array is = %d",sum);
+   printf("average of all elements in an array is=%d",avg);
+   return 0;
+}
