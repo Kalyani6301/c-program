@@ -1,0 +1,16 @@
+/*calculate total and aggregate marks of the students*/
+#include<stdio.h>
+int main(){
+	int sub1,sub2,sub3,sub4,aggregate_percentage;
+	float total_marks;
+	printf("enter the marks  sub1:");
+	printf("\nenter the marks sub2:");
+	printf("\nenter the marks sub3:");
+	printf("\nenter the marks sub4:");
+	scanf("%d%d%d%d",&sub1,&sub2,&sub3,&sub4);
+	total_marks=sub1+sub2+sub3+sub4;
+	printf("total marks is:%f\n",total_marks);
+aggregate_percentage=(total_marks/500)*100;
+printf("\naggregate percentage  is:%d",aggregate_percentage);
+return 0;
+}
